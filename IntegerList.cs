@@ -59,7 +59,6 @@ namespace Assignment1
         {
             if (index >= lastEmpty || index < 0)
             {
-                return false;
                 throw new IndexOutOfRangeException();
 
             }
@@ -93,6 +92,7 @@ namespace Assignment1
                 if (item == _internalStorage[i])
                 {
                     index = i;
+                    return index;
                 }
             }
 
@@ -124,5 +124,6 @@ namespace Assignment1
             }
             return false;
         }
+
     }
 }
